@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  width: 400px;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  margin-top: 15px;
+  width: 100px;
+}
