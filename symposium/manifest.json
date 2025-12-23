@@ -1,12 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "SYMPOSIUM AI ALIGNMENT",
+  "name": "SYMPOSIUM",
   "version": "1.0",
-  "description": "Checks pages for AI alignment related content.",
+  "description": "An AI assistant for your browsing.",
   "permissions": [
     "activeTab",
     "scripting",
-    "storage"
+    "storage",
+    "contextMenus"
   ],
   "action": {
     "default_popup": "popup/popup.html",
@@ -26,7 +27,8 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["scripts/content.js"]
+      "js": ["scripts/content.js"],
+      "run_at": "document_idle"
     }
   ],
   "icons": {

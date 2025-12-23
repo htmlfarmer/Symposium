@@ -1,0 +1,64 @@
+body {
+  font-family: sans-serif;
+  width: 350px;
+  padding: 10px;
+}
+
+#api-select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.options {
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc; /* Default color */
+}
+
+.status-dot.waiting {
+  background-color: #28a745; /* Green */
+  animation: blink 1s infinite;
+}
+
+.status-dot.error {
+  background-color: #dc3545; /* Red */
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#response {
+  margin-top: 10px;
+  white-space: pre-wrap;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}

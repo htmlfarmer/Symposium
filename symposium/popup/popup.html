@@ -5,7 +5,10 @@
   <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
 <body>
-  <h1>SYMPOSIUM AI ALIGNMENT</h1>
+  <div class="header">
+    <h1>SYMPOSIUM</h1>
+    <div id="status-dot" class="status-dot"></div>
+  </div>
   <form id="ask-form">
     <select id="api-select">
       <option value="gemini">Google Gemini</option>
@@ -13,10 +16,16 @@
       <option value="anthropic">Anthropic</option>
     </select>
     <textarea id="question" rows="4" placeholder="Ask a question..."></textarea>
-    <button type="submit">Ask</button>
+    <div class="options">
+      <input type="checkbox" id="analyze-page-checkbox">
+      <label for="analyze-page-checkbox">Analyze page content</label>
+    </div>
+    <div class="button-group">
+      <button type="submit">Ask</button>
+      <button type="button" id="settings-button">Settings</button>
+    </div>
   </form>
   <div id="response"></div>
-  <a href="#" id="options-link">Manage API Keys</a>
   <script src="popup.js"></script>
 </body>
 </html>

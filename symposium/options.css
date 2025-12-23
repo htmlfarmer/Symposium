@@ -21,3 +21,17 @@ button {
   margin-top: 15px;
   width: 100px;
 }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#prompt-library-button,
+#insert-highlighted-button,
+#history-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
